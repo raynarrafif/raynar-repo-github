@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio - Raynar Rafif</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="cursor-glow"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">&lt;RAYNAR/&gt;</a>
+
+    <ul class="nav-links">
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#skills">Keahlian</a></li>
+      <li><a href="#projects">Proyek</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#about" onclick="closeMobileNav()">Tentang</a>
+    <a href="#skills" onclick="closeMobileNav()">Keahlian</a>
+    <a href="#projects" onclick="closeMobileNav()">Proyek</a>
+    <a href="#contact" onclick="closeMobileNav()">Kontak</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+
+      <div class="hero-text">
+        <p class="hero-label">RPL STUDENT • WEB DESIGNER</p>
+
+        <h1>
+          Halo, saya<br>
+          <span>Raynar Rafif</span>
+        </h1>
+
+        <p class="hero-desc">
+          Pelajar SMK jurusan Rekayasa Perangkat Lunak yang sedang mengembangkan
+          kemampuan di bidang web design, terutama HTML, CSS, dan
+         JavaScript.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">Lihat Proyek</a>
+          <a href="#contact" class="btn-outline">Hubungi Saya</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="profile-card">
+          <img src="assets/foto-profil.jpg" alt="Foto Raynar Rafif">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label">01. Tentang Saya</div>
+    <h2 class="section-title">Siapa <span>Saya?</span></h2>
+
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <p>
+          Halo! Saya <strong>Raynar Rafif</strong>, seorang pelajar dari
+          <strong>SMKS Poncol</strong> yang memiliki ketertarikan besar pada dunia teknologi,
+          khususnya pengembangan website dan tampilan antarmuka.
+        </p>
+
+        <p>
+          Saya berasal dari <strong>Jakarta</strong> dan saat ini sedang menekuni bidang
+          <strong>Rekayasa Perangkat Lunak</strong>. Saya terbiasa membuat halaman web sederhana,
+          menyusun struktur HTML, mengatur tampilan dengan CSS, serta mulai mempelajari logika
+          interaktif menggunakan JavaScript.
+        </p>
+
+        <p>
+          Bagi saya, website bukan hanya soal tampilan yang menarik, tetapi juga bagaimana sebuah
+          halaman bisa terasa rapi, nyaman digunakan, dan mudah dipahami oleh pengguna.
+        </p>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat-card">
+          <span class="stat-number" data-count="6+">6+</span>
+          <div class="stat-label">Proyek Dibuat</div>
+        </div>
+
+        <div class="stat-card">
+          <span class="stat-number" data-count="1+">1+</span>
+          <div class="stat-label">Tahun Belajar</div>
+        </div>
+
+        <div class="stat-card">
+          <span class="stat-number" data-count="3">3</span>
+          <div class="stat-label">Tech Stack Utama</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-label">02. Keahlian</div>
+    <h2 class="section-title">Skill & <span>Tech Stack</span></h2>
+
+    <div class="skills-grid reveal">
+
+      <div class="skill-category">
+        <div class="skill-cat-title">⬡ Skill Utama</div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>HTML</span>
+            <span class="skill-pct">55%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" data-width="55"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>CSS</span>
+            <span class="skill-pct">45%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" data-width="45"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>JavaScript</span>
+            <span class="skill-pct">20%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" data-width="20"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-title">⬡ Web Development</div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>Web Development</span>
+            <span class="skill-pct">10%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" data-width="10"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>PHP</span>
+            <span class="skill-pct">10%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" data-width="10"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>MySQL</span>
+            <span class="skill-pct">10%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" data-width="10"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-title">⬡ Tools & Teknologi</div>
+
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Bootstrap</span>
+          <span class="tag">Git</span>
+          <span class="tag">Figma</span>
+          <span class="tag">Responsive Design</span>
+        </div>
+
+        <p class="project-desc" style="margin-top: 1.5rem;">
+          Saya masih terus belajar dan mengembangkan kemampuan secara bertahap melalui latihan,
+          tugas sekolah, dan proyek web sederhana.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label">03. Proyek</div>
+    <h2 class="section-title">Proyek <span>Saya</span></h2>
+
+    <div class="projects-grid reveal">
+
+      <!-- PROJECT 1 -->
+      <div class="project-card">
+        <div class="project-thumb">
+          <img src="assets/website-belanja.png" alt="Website Belanja Online" class="project-img">
+        </div>
+
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Responsive</span>
+          </div>
+
+          <div class="project-title">Website Belanja Online</div>
+
+          <p class="project-desc">
+            Website jual beli online yang dibuat untuk menampilkan produk, melihat detail barang,
+            serta menyediakan tampilan keranjang belanja yang rapi dan mudah digunakan.
+          </p>
+
+          <a href="https://gabzstoredemo.my.id/" class="project-link" target="_blank" rel="noopener noreferrer">
+            Kunjungi Website →
+          </a>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="project-card">
+        <div class="project-thumb">
+          <img src="assets/kuis.png" alt="Kuis Python" class="project-img">
+        </div>
+
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Logic</span>
+            <span class="tag">Quiz</span>
+          </div>
+
+          <div class="project-title">Kuis Python</div>
+
+          <p class="project-desc">
+            Aplikasi kuis sederhana berbasis Python untuk menguji pengetahuan dasar pemrograman.
+          </p>
+
+          <a href="assets/kuis.png" class="project-link" target="_blank" rel="noopener noreferrer">
+            Lihat Proyek →
+          </a>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="project-card">
+        <div class="project-thumb">
+          <img src="assets/absensi.png" alt="Absensi Python" class="project-img">
+        </div>
+
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Data</span>
+            <span class="tag">Absensi</span>
+          </div>
+
+          <div class="project-title">Absensi Python</div>
+
+          <p class="project-desc">
+            Aplikasi absensi sederhana berbasis Python untuk mencatat kehadiran peserta kelas.
+          </p>
+
+          <a href="assets/absensi.png" class="project-link" target="_blank" rel="noopener noreferrer">
+            Lihat Proyek →
+          </a>
+        </div>
+      </div>
+
+      <!-- PROJECT 4 -->
+      <div class="project-card">
+        <div class="project-thumb">
+          <img src="assets/Penilaian.png" alt="Penilaian Tugas Python" class="project-img">
+        </div>
+
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Data</span>
+            <span class="tag">Table</span>
+          </div>
+
+          <div class="project-title">Penilaian Tugas Python</div>
+
+          <p class="project-desc">
+            Aplikasi penilaian tugas sederhana berbasis Python untuk menilai dan mencatat hasil kerja peserta kelas.
+          </p>
+
+          <a href="assets/penilaian.png" class="project-link" target="_blank" rel="noopener noreferrer">
+            Lihat Proyek →
+          </a>
+        </div>
+      </div>
+
+      <!-- PROJECT 5 -->
+      <div class="project-card">
+        <div class="project-thumb">
+          <img src="assets/kasir-struk.png" alt="Kertas Struk Berbasis Python" class="project-img">
+        </div>
+
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Transaction</span>
+            <span class="tag">Print</span>
+          </div>
+
+          <div class="project-title">Kertas Struk Berbasis Python</div>
+
+          <p class="project-desc">
+            Aplikasi pencetakan kertas struk sederhana berbasis Python untuk mencatat transaksi penjualan.
+          </p>
+
+          <a href="assets/kasir-struk.png" class="project-link" target="_blank" rel="noopener noreferrer">
+            Lihat Proyek →
+          </a>
+        </div>
+      </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-label">04. Kontak</div>
+    <h2 class="section-title">Mari <span>Terhubung</span></h2>
+
+    <div class="contact-wrapper reveal">
+      <div class="contact-info">
+        <p>
+          Jika ingin berdiskusi, bekerja sama, atau melihat perkembangan proyek saya,
+          silakan hubungi melalui kontak di bawah ini.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:raynarrafif96@gmail.com" class="contact-link">
+            <span class="contact-icon">✉</span>
+            <span>raynarrafif96@gmail.com</span>
+          </a>
+
+          <a href="https://github.com" target="_blank" class="contact-link">
+            <span class="contact-icon">⌥</span>
+            <span>github.com/raynarrafif</span>
+          </a>
+
+          <a href="https://linkedin.com" target="_blank" class="contact-link">
+            <span class="contact-icon">⬡</span>
+            <span>linkedin.com/in/raynarrafif</span>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label>NAMA LENGKAP</label>
+            <input type="text" id="f-name" placeholder="Masukkan nama kamu" />
+          </div>
+
+          <div class="form-group">
+            <label>EMAIL</label>
+            <input type="email" id="f-email" placeholder="raynarrafif96@gmail.com" />
+          </div>
+
+          <div class="form-group">
+            <label>PESAN</label>
+            <textarea id="f-msg" placeholder="Halo Raynar, saya ingin berdiskusi tentang..."></textarea>
+          </div>
+
+          <button class="submit-btn" onclick="submitForm()">Kirim Pesan ✦</button>
+        </div>
+
+        <div class="form-success" id="form-success">
+          ✦ Terima kasih! Pesan Anda sudah diterima.<br />
+          Saya akan menghubungi Anda segera.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Raynar Rafif — Dibuat dengan HTML, CSS, dan semangat belajar.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
