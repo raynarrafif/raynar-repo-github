@@ -399,6 +399,10 @@ section {
   font-family: "Space Mono", monospace;
 }
 
+.stat-number::after {
+  content: "+";
+}
+
 .stat-label {
   font-size: 0.8rem;
   color: var(--muted);
